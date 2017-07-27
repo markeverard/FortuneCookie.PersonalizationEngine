@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>FortuneCookie.PersonalizationEngine</id>
+    <version>1.1.0.0</version>
+    <authors>Mark Everard</authors>
+    <licenseUrl>http://personalization.codeplex.com/license</licenseUrl>
+    <projectUrl>http://personalization.codeplex.com</projectUrl>
+    <iconUrl>http://www.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=personalization&amp;DownloadId=237158</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Fortune Cookie Personalization Engine for EPiServer extends the Visitor Groups functionality in EPiServer CMS 6 R2 providing a framework for developers to provide content editors with the ability to display recommended page content to users matched to specified Visitor Groups.</description>
+    <summary>The Fortune Cookie Personalization Engine for EPiServer extends the Visitor Groups functionality in EPiServer CMS 6 R2 providing a framework for developers to provide content editors with the ability to display recommended page content to users matched to specified Visitor Groups.</summary>
+    <language>en-US</language>
+  </metadata>
+</package>

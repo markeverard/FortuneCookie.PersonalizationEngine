@@ -1,0 +1,46 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0" DefaultTargets="default">
+	<PropertyGroup>
+		<BaseDir>$(MSBuildProjectDirectory)\..</BaseDir>
+		<Configuration Condition="'$(Configuration)'==''">Release</Configuration>
+		<TargetFramework Condition="'$(TargetFrameworkVersion)'=='v4.0'">net40</TargetFramework>
+		<TargetFramework Condition="'$(TargetFramework)'!='net40'">net35</TargetFramework>
+		<PackageDir>$(BaseDir)\packages</PackageDir>
+		<SolutionFile>$(MSBuildProjectDirectory)\FortuneCookie.PersonalizationEngine.sln</SolutionFile>
+		<MSBuildExtensions>$(BaseDir)\lib\msbuild\msbuild.community.tasks.dll</MSBuildExtensions>
+	</PropertyGroup>
+ 
+	<UsingTask AssemblyFile="$(MSBuildExtensions)" TaskName="MSBuild.Community.Tasks.XmlUpdate" />
+ 
+	<Target Name="default" DependsOnTargets="NugetPrepareContent;NugetPrepareLibraries;NugetPackage" />
+ 
+	<Target Name="NugetPrepareContent">
+		<ItemGroup>
+			<ContentFiles Include="$(BaseDir)\src\FortuneCookie.PersonalizationEngine\Views\**" />
+		</ItemGroup>
+		<!-- Copy the source files to the package dir -->
+		<Copy SourceFiles="@(ContentFiles)" DestinationFolder="$(PackageDir)\core\content\modules\PersonalizationEngine\Views\%(RecursiveDir)" />
+	</Target>
+ 
+	<Target Name="NugetPrepareLibraries">
+		<ItemGroup>
+			<MainBinaries Include="$(BaseDir)\src\FortuneCookie.PersonalizationEngine\bin\$(Configuration)\FortuneCookie.PersonalizationEngine.dll" />
+		</ItemGroup>
+		<!-- Copy the source files to the package dir -->
+		<Copy SourceFiles="@(MainBinaries)" DestinationFolder="$(PackageDir)\core\lib\$(TargetFramework)\%(RecursiveDir)" />
+	</Target>
+ 
+	<Target Name="NugetPackage">
+		<!-- Get the version number of the main assembly to insert into the nuspec files -->
+		<GetAssemblyIdentity AssemblyFiles="$(BaseDir)\src\FortuneCookie.PersonalizationEngine\bin\$(Configuration)\FortuneCookie.PersonalizationEngine.dll">
+			<Output TaskParameter="Assemblies" ItemName="AsmInfo" />
+		</GetAssemblyIdentity>
+		<!-- insert the version number into the nuspec files -->
+		<XmlUpdate
+			Namespace="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd"
+			XmlFileName="$(PackageDir)\core\FortuneCookie.PersonalizationEngine.nuspec"
+			XPath="/package/metadata/version"
+			Value="%(AsmInfo.Version)" /> 
+		<Exec WorkingDirectory="$(PackageDir)" Command="$(BaseDir)\lib\nuget\nuget.exe pack $(PackageDir)\core\FortuneCookie.PersonalizationEngine.nuspec" />
+	</Target>
+</Project>
+

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>FortuneCookie.PersonalizationEngine.UI</id>
+    <version>1.0.0.0</version>
+    <authors>Lee Crowe / Mark Everard</authors>
+    <licenseUrl>http://personalization.codeplex.com/license</licenseUrl>
+    <projectUrl>http://personalization.codeplex.com</projectUrl>
+    <iconUrl>http://www.codeplex.com/Project/Download/FileDownload.aspx?ProjectName=personalization&amp;DownloadId=237158</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="FortuneCookie.PersonalizationEngine" version="[1.1.0.0]" />
+    </dependencies>
+    <description>The FortuneCookie.PersonalizationEngine.UI project provides an example set of user interface components (custom properties and dynamic content elements) for the FortuneCookie.PersonalizationEngine.</description>
+    <summary>The FortuneCookie.PersonalizationEngine.UI project provides an example set of user interface components (custom properties and dynamic content elements) for the FortuneCookie.PersonalizationEngine.</summary>
+    <language>en-US</language>
+  </metadata>
+</package>

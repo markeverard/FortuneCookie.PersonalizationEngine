@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C23DA65-3A72-4A03-B5B9-14E342A59B18}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FortuneCookie.PersonalizationEngine</RootNamespace>
+    <AssemblyName>FortuneCookie.PersonalizationEngine</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPiServer, Version=6.1.379.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPiServer.ApplicationModules, Version=6.2.267.1, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="EPiServer.BaseLibrary, Version=6.1.379.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPiServer.Cms.Shell.UI, Version=6.1.379.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_MSIL\EPiServer.Cms.Shell.UI\6.1.379.0__8fe83dea738b45b7\EPiServer.Cms.Shell.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Configuration, Version=6.1.379.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL" />
+    <Reference Include="EPiServer.Data, Version=6.2.267.1, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPiServer.Framework, Version=6.2.267.1, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPiServer.Shell, Version=6.2.267.1, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="EPiServer.Web.WebControls, Version=6.1.379.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition, Version=2009.26.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\System.Web.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContentProviderEventHandler.cs" />
+    <Compile Include="ContentProviders\CachedContentProviderBase.cs" />
+    <Compile Include="ContentProviders\RecentlyChangedPagesContentProvider.cs" />
+    <Compile Include="EditorModels\CategoryListCriteriaModel.cs" />
+    <Compile Include="EditorModels\SearchReferrerCriteriaModel.cs" />
+    <Compile Include="EditorModels\ICriteriaModel.cs" />
+    <Compile Include="EditorModels\TextBoxCriteriaModel.cs" />
+    <Compile Include="EditorModels\DefaultCriteriaModel.cs" />
+    <Compile Include="ContentProviders\PageSearchContentProvider.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Models\AdminExampleViewModel.cs" />
+    <Compile Include="Models\AdminViewModel.cs" />
+    <Compile Include="Models\IVisitorGroupContentProvider.cs" />
+    <Compile Include="Models\VisitorGroupContentProviderFactory.cs" />
+    <Compile Include="ContentProviders\PagesInCategoryContentProvider.cs" />
+    <Compile Include="ContentProviders\PagesWithPageNameContentProvider.cs" />
+    <Compile Include="ContentProviders\SearchReferrerContentProvider.cs" />
+    <Compile Include="Initialization.cs" />
+    <Compile Include="Models\ContentProviderAttributeModel.cs" />
+    <Compile Include="PageDataComparer.cs" />
+    <Compile Include="PersonalizationEngine.cs" />
+    <Compile Include="Reflection\AttributedTypesUtility.cs" />
+    <Compile Include="Services\ContentProviderAttributeService.cs" />
+    <Compile Include="VisitorGroupContentProviderAttribute.cs" />
+    <Compile Include="Services\DdsContentProviderService.cs" />
+    <Compile Include="Services\IContentProviderService.cs" />
+    <Compile Include="Models\VisitorGroupContentProviderModel.cs" />
+    <Compile Include="ContentProviders\IContentProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CriteriaValidationModelBinder.cs" />
+    <Compile Include="Validation\ContentProviderModelValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Admin\Index.aspx" />
+    <Content Include="Views\Admin\CriteriaEditorTemplate.ascx" />
+    <Content Include="Views\Admin\Example.aspx" />
+    <Content Include="Views\Admin\Setup.aspx" />
+    <Content Include="Views\Shared\EditorTemplates\CategoryListCriteriaModel.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\DefaultCriteriaModel.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\SearchReferrerCriteriaModel.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\TextBoxCriteriaModel.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\PersonalizationEngine.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+    <MSBuild Projects="../../buildscripts/NugetPackage-Core.proj" Properties="TargetFrameworkVersion=$(TargetFrameworkVersion)" />
+  </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53372</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

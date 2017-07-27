@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortuneCookie.PersonalizationEngine", "src\FortuneCookie.PersonalizationEngine\FortuneCookie.PersonalizationEngine.csproj", "{6C23DA65-3A72-4A03-B5B9-14E342A59B18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortuneCookie.PersonalizationEngine.UI", "src\FortuneCookie.PersonalizationEngine.UI\FortuneCookie.PersonalizationEngine.UI.csproj", "{A0A26DDE-0A4F-4537-B8F0-89877F29DFA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C23DA65-3A72-4A03-B5B9-14E342A59B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C23DA65-3A72-4A03-B5B9-14E342A59B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C23DA65-3A72-4A03-B5B9-14E342A59B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C23DA65-3A72-4A03-B5B9-14E342A59B18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0A26DDE-0A4F-4537-B8F0-89877F29DFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A26DDE-0A4F-4537-B8F0-89877F29DFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A26DDE-0A4F-4537-B8F0-89877F29DFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A26DDE-0A4F-4537-B8F0-89877F29DFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

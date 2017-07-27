@@ -1,0 +1,11 @@
+<configuration>
+	<episerver.shell>
+		<publicModules rootPath="~/modules/" autoDiscovery="Minimal">
+			<add name="PersonalizationEngine">
+				<assemblies>
+					<add assembly="FortuneCookie.PersonalizationEngine" />
+				</assemblies>
+			</add>
+		</publicModules>
+	</episerver.shell>
+</configuration>
